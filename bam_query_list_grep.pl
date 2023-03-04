@@ -8,6 +8,7 @@ $bam_name = $ARGV[1];
 %query_flag = ();
 open(IN, $query_name_file);
 while (<IN>) {
+	chomp;
 	$query_flag{$_} = 1;
 }
 close(IN);
